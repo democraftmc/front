@@ -1,0 +1,18 @@
+---
+import Navbar from "../components/Navbar.astro";
+---
+
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>DEMOCRAFT-FRONT</title>
+	<link rel="stylesheet" href="/fixes.css">
+  </head>
+  <body>
+    <Navbar />
+	<slot />
+  </body>
+</html>

@@ -7,8 +7,20 @@ export default {
     },
     extend: {},
   },
+  darkMode: ["class", '[data-theme="dark"]'],
   daisyui: {
-    themes: ["coffee", "cupcake"],
+    themes: [
+      {
+        light: {
+          ...require("daisyui/src/theming/themes")["cupcake"],
+          primary: "#f55",
+        },
+        dark: {
+          ...require("daisyui/src/theming/themes")["coffee"],
+          primary: "#f55",
+        },
+      },
+    ],
   },
   plugins: [require("daisyui")],
 };

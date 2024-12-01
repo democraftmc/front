@@ -9,11 +9,16 @@
   });
 </script>
 <dialog id="menu_modal" class="modal">
-  <div class="modal-box">
-    <h3 class="text-lg font-bold">Hello!</h3>
-    <p class="py-4">Press ESC key or click outside to close</p>
+  <div class="modal-box bg-transparent shadow-none relative min-w-full">
+    <h3 class="text-lg pixel -translate-y-5 absolute left-28">MENU</h3>
+    <div class="bg-base-100 rounded-lg grid max-h-96 overflow-scroll p-4 gap-4">
+      <div class="bg-primary rounded-lg min-h-32"></div>
+      <div class="bg-primary rounded-lg min-h-32"></div>
+      <div class="bg-primary rounded-lg min-h-32"></div>
+      <div class="bg-primary rounded-lg min-h-32"></div>
+    </div>
+    <form method="dialog" class="modal-backdrop">
+      <button>close</button>
+    </form>
   </div>
-  <form method="dialog" class="modal-backdrop">
-    <button>close</button>
-  </form>
 </dialog>

@@ -23,3 +23,17 @@
       min-height: 85vh;
    }
 }
+
+@font-face {
+   font-family: 'Pixel Perfect';
+   src: url('PixelPerfect.woff2') format('woff2'),
+        url('PixelPerfect.woff') format('woff'),
+        url('PixelPerfect.ttf') format('truetype');
+   font-weight: normal;
+   font-style: normal;
+   font-display: swap;
+}
+
+.pixel {
+   font-family: 'Pixel Perfect', sans-serif;
+}

@@ -3,10 +3,73 @@ import Layout from "../../layouts/Layout.astro";
 ---
 
 <Layout>
-  <div class="bg-base-100 p-4 pt-10">
+  <div class="bg-base-100 p-8 pt-10 lg:px-32">
     <h1 class="text-4xl font-bold text-center">Articles</h1>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mt-6">
+      <div class="card bg-base-200 w-full shadow-xl">
+        <figure>
+          <img
+            src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+            alt="Shoes"
+          />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title text-2xl">
+            <span>Ménage de printemps sur le Launcheur !</span>
+            <span class="absolute right-4 top-4"
+              ><i class="fa-solid fa-calendar-days"></i> 04/10/2024</span
+            >
+          </h2>
+          <p>If a dog chews shoes whose shoes does he choose?</p>
+          <div class="relative mb-10">
+            <div class="join absolute left-0">
+              <img class="join-item w-12 h-12" src="/avatar.png" />
+              <button class="btn join-item flex-col gap-1"
+                >Funasitien
+                <span class="badge badge-warning">
+                  <i class="fa-solid fa-crown"></i>
+                  Fondateur
+                </span></button
+              >
+            </div>
+            <a href="./article" class="absolute right-0 btn btn-primary"
+              >Lire l'article</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="card bg-base-200 w-full shadow-xl">
+        <figure>
+          <img
+            src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+            alt="Shoes"
+          />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title text-2xl">
+            <span>DEMOCRAFT en live à la CubedCon !</span>
+            <span class="absolute right-4 top-4"
+              ><i class="fa-solid fa-calendar-days"></i> 04/10/2024</span
+            >
+          </h2>
+          <p>If a dog chews shoes whose shoes does he choose?</p>
+          <div class="relative mb-10">
+            <div class="join absolute left-0">
+              <img class="join-item w-12 h-12" src="/avatar.png" />
+              <button class="btn join-item flex-col gap-1"
+                >Funasitien
+                <span class="badge badge-warning">
+                  <i class="fa-solid fa-crown"></i>
+                  Fondateur
+                </span></button
+              >
+            </div>
+            <a href="./article" class="absolute right-0 btn btn-primary"
+              >Lire l'article</a
+            >
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </Layout>

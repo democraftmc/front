@@ -5,17 +5,21 @@
 <div
   class="navbar hidden md:flex fixed border-b backdrop-blur border-base-300 z-30 bg-black/5 dark:bg-white/10">
   <div class="navbar-start">
-    <img
-      src="https://us-east-1.tixte.net/uploads/cdn.democraft.fr/logo.png"
-      class="w-10 h-10 rounded-lg hover:scale-110 transition-all ease-in-out duration-300"
-    />
+    <a href="/" class="text-xs pixel font-bold flex items-center">
+      <img
+        src="https://us-east-1.tixte.net/uploads/cdn.democraft.fr/logo.png"
+        class="w-10 h-10 rounded-lg hover:scale-110 transition-all ease-in-out duration-300 mr-2"
+      />
+      <span class="relative bottom-1">DEMOCRAFT</span></a
+    >
   </div>
   <div class="navbar-center">
     <ul class="menu menu-horizontal px-1">
-      <li><a>Item 1</a></li>
-      <li><a>Item 2</a></li>
-      <li><a>Item 3</a></li>
-      <li><a>Item 4</a></li>
+      <li><a href="/news">Blog</a></li>
+      <li><a href="/vote">Vote</a></li>
+
+      <li><a href="/shop">Boutique</a></li>
+      <li><a href="/forum">Forum</a></li>
       <li><a>Item 5</a></li>
     </ul>
   </div>
@@ -50,14 +54,16 @@
         <p class="mr-2">Funasitien</p>
         <img
           class="rounded-lg w-10 h-10 hover:scale-110 transition-all ease-in-out duration-300"
-          src="avatar.png"
+          src="/avatar.png"
         />
       </div>
       <ul
         tabindex="0"
         class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow mt-6">
-        <li><a>Item 1</a></li>
-        <li><a>Item 2</a></li>
+        <li><a>Profil</a></li>
+        <li><a>Achats</a></li>
+        <li><a class="link-info">Panel Administrateur</a></li>
+        <li><a class="link-error">Déconnexion</a></li>
       </ul>
     </div>
   </div>

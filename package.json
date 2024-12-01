@@ -6,7 +6,7 @@
     "dev": "astro dev",
     "start": "astro dev --host",
     "build": "astro build",
-    "build:css": "tailwindcss -i ./public/fixes.css -o ./public/output.css"
+    "build:css": "tailwindcss -i ./public/fixes.css -o ./public/output.css --minify"
     "preview": "astro preview",
     "astro": "astro"
   },

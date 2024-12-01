@@ -1,0 +1,19 @@
+<!-- Open the modal using ID.showModal() method -->
+<script>
+  document.addEventListener("keydown", (event) => {
+    // Detect "Ctrl + S"
+    if ((event.ctrlKey || event.altKey) && event.key === "m") {
+      event.preventDefault(); // Prevent default browser behavior
+      menu_modal.showModal();
+    }
+  });
+</script>
+<dialog id="menu_modal" class="modal">
+  <div class="modal-box">
+    <h3 class="text-lg font-bold">Hello!</h3>
+    <p class="py-4">Press ESC key or click outside to close</p>
+  </div>
+  <form method="dialog" class="modal-backdrop">
+    <button>close</button>
+  </form>
+</dialog>

@@ -19,7 +19,7 @@
 }
 
 .banner-hero {
-   min-height: 30vh;
+   min-height: 50vh;
 }
 
 @media (min-width: 768px) {
@@ -27,7 +27,7 @@
       min-height: 85vh;
    }
    .banner-hero {
-   min-height: 40vh;
+   min-height: 50vh;
    }
 }
 

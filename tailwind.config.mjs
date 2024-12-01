@@ -14,6 +14,7 @@ export default {
         light: {
           ...require("daisyui/src/theming/themes")["cupcake"],
           primary: "#f55",
+          "--rounded-btn": "0.5rem", 
         },
         dark: {
           ...require("daisyui/src/theming/themes")["coffee"],

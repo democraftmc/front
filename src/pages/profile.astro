@@ -4,16 +4,97 @@ import Layout from "../layouts/Layout.astro";
 
 <Layout>
   <div class="bg-base-100 p-4 pt-10">
-    <div class="card bg-base-200">
+    <div class="card bg-base-200 p-4 flex flex-row">
+      <div class="grid grid-cols-4 md:grid-cols-10 w-full">
+        <img src="/avatar.png" class="rounded-lg w-32 h-32" />
+        <div class="max-sm:p-4 pt-1 pb-0 col-span-3">
+        <h1 class="text-sm md:text-base pixel font-black">Funasitien</h1>
+          <span class="mt-5 badge badge-lg badge-warning">Fondateur</span>
+          <span class="mt-5 badge badge-lg badge-warning">Fondateur</span>
+          <p class="mt-2"><i class="fa fa-coins"></i> 10123</p>
+          <p><i class="fa-brands fa-discord"></i> @funasitien</p>
+        </div>
+        <div class="flex col-span-2 md:flex-col gap-1 md:col-start-9">
+          <button class="btn btn-primary">Activer la 2FA</button>
+          <button class="btn btn-error">Supprimer mon compte</button>
+          <button class="btn bg-indigo-600 hover:bg-indigo-800"
+            >Associer à Discord</button
+          >
+        </div>
+      </div>
     </div>
-    <div class="grid grid-cols-1 md:grd-cols-2">
-      <div class="card bg-base-200">
+    <div class="grid grid-cols-1 md:grid-cols-2 mt-4 gap-4">
+      <div class="card bg-base-200 p-4">
+        <h2 class="card-title">Changer l'adresse email</h2>
+        <form class="mt-2">
+          <label class="form-control my-2">
+            <input type="text" class="input input-bordered" />
+          </label>
+          <label class="form-control mt-2">
+            <input type="text" class="input input-bordered" />
+          </label>
+          <button class="btn btn-primary mt-2">Changer</button>
+        </form>
       </div>
-      <div class="card bg-base-200">
+      <div class="card bg-base-200 p-4">
+        <h2 class="card-title">Changer le mot de passe</h2>
+        <form class="mt-2">
+          <label class="form-control my-2">
+            <input type="password" class="input input-bordered" />
+          </label>
+          <div class="flex w-full">
+            <label class="form-control mt-2 w-1/2">
+              <input
+                type="password"
+                class="input input-bordered rounded-r-none"
+              />
+            </label>
+            <label class="form-control mt-2 w-1/2">
+              <input
+                type="password"
+                class="input input-bordered rounded-l-none"
+              />
+            </label>
+          </div>
+          <button class="btn btn-primary mt-2">Changer</button>
+        </form>
       </div>
-      <div class="card bg-base-200">
+      <div class="card bg-base-200 p-4">
+        <h2 class="card-title">Changer le pseudo</h2>
+        <form class="mt-2 flex">
+          <div class="join w-full">
+            <label class="join-item form-control">
+              <input type="text" class="input input-bordered rounded-r-none" />
+              <div class="label">
+                <span class="label-text-alt"
+                  >Essayer au maximum de faire correspondre votre pseudo avec
+                  celui en jeu.</span
+                >
+              </div>
+            </label>
+            <button class="join-item btn btn-primary">Changer</button>
+          </div>
+        </form>
       </div>
-      <div class="card bg-base-200">
+      <div class="card bg-base-200 p-4">
+        <h2 class="card-title">Changer d'avatar</h2>
+        <form class="mt-2 flex">
+          <div class="join w-full">
+            <label class="join-item form-control">
+              <input
+                type="file"
+                class="file-input file-input-bordered rounded-r-none"
+              />
+              <div class="label">
+                <span class="label-text-alt"
+                  >Votre image doit être au format carré et de taille minimum
+                  64x64</span
+                >
+              </div>
+            </label>
+            <button class="join-item btn btn-primary">Changer</button>
+          </div>
+        </form>
       </div>
     </div>
   </div>

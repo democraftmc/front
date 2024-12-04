@@ -5,21 +5,28 @@ import Layout from "../layouts/Layout.astro";
 <Layout>
   <div class="bg-base-100 p-4 pt-10">
     <div class="card bg-base-200 p-4 flex flex-col">
- <img src="/avatar.png" class="md:hidden w-full" />
+      <img src="/avatar.png" class="md:hidden w-full rounded-xl" />
       <div class="grid grid-cols-4 md:grid-cols-10 w-full">
         <img src="/avatar.png" class="hidden md:flex rounded-lg w-32 h-32" />
         <div class="max-sm:p-4 pt-1 pb-0 col-span-3">
-        <h1 class="text-sm md:text-base pixel font-black">Funasitien</h1>
+          <h1 class="text-sm md:text-base pixel font-black">Funasitien</h1>
           <span class="mt-5 badge badge-lg badge-warning">Fondateur</span>
           <span class="mt-5 badge badge-lg badge-warning">Fondateur</span>
           <p class="mt-2"><i class="fa fa-coins"></i> 10123</p>
           <p><i class="fa-brands fa-discord"></i> @funasitien</p>
         </div>
-        <div class="flex col-span-2 md:flex-col gap-1 md:col-start-9 flex-wrap justify-center">
-          <button class="btn btn-primary">Activer la 2FA</button>
-          <button class="btn btn-error">Supprimer mon compte</button>
-          <button class="btn bg-indigo-600 hover:bg-indigo-800"
-            >Associer à Discord</button
+        <div
+          class="flex col-span-4 md:flex-col gap-1 md:col-start-9 flex-wrap justify-center">
+          <button class="btn btn-neutral"
+            ><i class="fa-solid fa-shield-halved"></i> Activer la 2FA</button
+          >
+          <button class="btn btn-error"
+            ><i class="fa-solid fa-user-xmark"></i> Supprimer mon compte</button
+          >
+          <button
+            class="btn text-white border-0 bg-indigo-600 hover:bg-indigo-800">
+            <i class="fa-brands fa-discord"></i>
+            Associer à Discord</button
           >
         </div>
       </div>
@@ -34,7 +41,7 @@ import Layout from "../layouts/Layout.astro";
           <label class="form-control mt-2">
             <input type="text" class="input input-bordered" />
           </label>
-          <button class="btn btn-primary mt-2">Changer</button>
+          <button class="btn btn-success mt-2">Changer</button>
         </form>
       </div>
       <div class="card bg-base-200 p-4">
@@ -43,7 +50,7 @@ import Layout from "../layouts/Layout.astro";
           <label class="form-control my-2">
             <input type="password" class="input input-bordered" />
           </label>
-          <div class="flex ">
+          <div class="flex">
             <label class="form-control mt-2 w-1/2">
               <input
                 type="password"
@@ -57,15 +64,18 @@ import Layout from "../layouts/Layout.astro";
               />
             </label>
           </div>
-          <button class="btn btn-primary mt-2">Changer</button>
+          <button class="btn btn-success mt-2">Changer</button>
         </form>
       </div>
       <div class="card bg-base-200 p-4">
         <h2 class="card-title">Changer le pseudo</h2>
-        <form class="mt-2 flex">
-          <div class="join max-w-xs">
+        <form class="mt-2 flex flex-col">
+          <div class="join">
             <label class="join-item form-control maw-w-xs">
-              <input type="text" class="input input-bordered rounded-r-none" />
+              <input
+                type="text"
+                class="input input-bordered md:rounded-r-none"
+              />
               <div class="label">
                 <span class="label-text-alt"
                   >Essayer au maximum de faire correspondre votre pseudo avec
@@ -73,18 +83,21 @@ import Layout from "../layouts/Layout.astro";
                 >
               </div>
             </label>
-            <button class="join-item btn btn-primary">Changer</button>
+            <button class="join-item btn btn-success max-sm:hidden"
+              >Changer</button
+            >
           </div>
+          <button class="join-item btn btn-success sm:hidden">Changer</button>
         </form>
       </div>
       <div class="card bg-base-200 p-4">
         <h2 class="card-title">Changer d'avatar</h2>
-        <form class="mt-2 flex">
-          <div class="join max-w-xs">
+        <form class="mt-2 flex flex-col">
+          <div class="join">
             <label class="join-item form-control">
               <input
                 type="file"
-                class="file-input file-input-bordered rounded-r-none"
+                class="file-input file-input-sm md:file-input-md file-input-bordered md:rounded-r-none"
               />
               <div class="label">
                 <span class="label-text-alt"
@@ -93,8 +106,11 @@ import Layout from "../layouts/Layout.astro";
                 >
               </div>
             </label>
-            <button class="join-item btn btn-primary">Changer</button>
+            <button class="join-item btn btn-success max-sm:hidden"
+              >Changer</button
+            >
           </div>
+          <button class="join-item btn btn-success sm:hidden">Changer</button>
         </form>
       </div>
     </div>

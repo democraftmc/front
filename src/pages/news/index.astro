@@ -2,9 +2,8 @@
 import Layout from "../../layouts/Layout.astro";
 ---
 
-<Layout>
+<Layout title="Articles">
   <div class="bg-base-100 p-8 pt-10 lg:px-32">
-    <h1 class="text-4xl font-bold text-center">Articles</h1>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mt-6">
       <div class="card bg-base-200 w-full shadow-xl">
         <figure>
@@ -15,7 +14,7 @@ import Layout from "../../layouts/Layout.astro";
         </figure>
         <div class="card-body">
           <h2 class="card-title text-2xl">
-            <span>Ménage de printemps sur le Launcheur !</span>
+            <span>DEMOCRAFT en live à la CubedCon !</span>
             <span class="absolute right-4 top-4"
               ><i class="fa-solid fa-calendar-days"></i> 04/10/2024</span
             >
@@ -24,17 +23,16 @@ import Layout from "../../layouts/Layout.astro";
           <div class="relative mb-10">
             <div class="join absolute left-0">
               <img class="join-item w-12 h-12" src="/avatar.png" />
-              <button class="btn join-item flex-col gap-1"
+              <button
+                class="join-item flex flex-col justify-center items-center px-1"
                 >Funasitien
                 <span class="badge badge-warning">
                   <i class="fa-solid fa-crown"></i>
                   Fondateur
                 </span></button
-              ><a href="./article" class="join-item md:hidden btn btn-primary"
-              >Lire l'article</a
-            >
+              >
             </div>
-            <a href="./article" class="hidden md:inline-flex absolute right-0 btn btn-primary"
+            <a href="./article" class="absolute right-0 btn btn-primary"
               >Lire l'article</a
             >
           </div>
@@ -58,7 +56,8 @@ import Layout from "../../layouts/Layout.astro";
           <div class="relative mb-10">
             <div class="join absolute left-0">
               <img class="join-item w-12 h-12" src="/avatar.png" />
-              <button class="btn join-item flex-col gap-1"
+              <button
+                class="join-item flex flex-col justify-center items-center px-1"
                 >Funasitien
                 <span class="badge badge-warning">
                   <i class="fa-solid fa-crown"></i>

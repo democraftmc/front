@@ -3,7 +3,7 @@ export default {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
     fontFamily: {
-      sans: ["Poppins", "sans-serif"],
+      sans: ["Satoshi", "Poppins", "sans-serif"],
     },
     extend: {},
   },

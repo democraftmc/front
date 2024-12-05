@@ -3,7 +3,8 @@ import Navbar from "../components/Navbar.astro";
 import Menu from "../components/Menu.astro";
 import Footer from "../components/Footer.astro";
 import Navigation from "../components/Navigation.astro";
-import Banner from "../sections/Banner.astro";
+
+const { title = "DEMOCRAFT" } = Astro.props;
 ---
 
 <!doctype html>
@@ -14,13 +15,7 @@ import Banner from "../sections/Banner.astro";
     <meta name="generator" content={Astro.generator} />
     <title>DEMOCRAFT-FRONT</title>
     <link rel="stylesheet" href="/fixes.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-
+    <link rel="stylesheet" href="/fonts/Satoshi.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
@@ -38,10 +33,31 @@ import Banner from "../sections/Banner.astro";
     <script src="https://cdn.jsdelivr.net/npm/theme-change@2.0.2/index.js"
     ></script>
   </head>
-  <body>
+  <body class="overflow-x-clip">
     <Menu />
     <Navbar />
-    <Banner/>
+    <div class="hero banner-hero relative indicator justify-center min-w-full">
+      <span
+        class="indicator-item indicator-bottom indicator-center badge badge-secondary pixel pt-4 pb-7 px-4">
+        { title }
+      </span>
+      <video
+        autoplay
+        muted
+        loop
+        id="background-video"
+        class="object-cover absolute overflow-hidden -z-10 scale-150 md:scale-110 lg:scale-100">
+        <source src="/demo-avion.mp4" type="video/mp4" />
+      </video>
+      <div class="hero-content text-center p-0">
+        <div>
+          <img
+            class="h-[77px] lg:h-40 mt-10 lg:mt-20"
+            src="https://us-east-1.tixte.net/uploads/cdn.democraft.fr/title_flat.png"
+          />
+        </div>
+      </div>
+    </div>
     <slot />
     <Footer />
     <Navigation />

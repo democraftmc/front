@@ -17,7 +17,7 @@ export default {
           "--rounded-btn": "0.5rem", 
         },
         dark: {
-          ...require("daisyui/src/theming/themes")["coffee"],
+          ...require("daisyui/src/theming/themes")["dark"],
           primary: "#f55",
         },
       },

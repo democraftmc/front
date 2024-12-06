@@ -2,6 +2,69 @@
 import Layout from "../../layouts/Layout.astro";
 ---
 
-<Layout>
-  <h1>Forum - Forum Post</h1>
+<Layout title="DEMOSMP">
+  <div class="bg-base-100 p-4 pt-10 h-96">
+    <div class="flex flex-col md:flex-row">
+      <div
+        class="breadcrumbs inline-flex justify-center md:justify-start md:w-3/4 md:pl-1"
+      >
+        <ul>
+          <li>
+            <a href="/"><i class="fa-solid fa-house mr-2"></i> Acceuil</a>
+          </li>
+          <li>
+            <a href="/forum"><i class="fa-solid fa-message mr-2"></i> Forum</a>
+          </li>
+          <li><i class="fa-solid fa-tree-city mr-2"></i> DEMOSMP</li>
+        </ul>
+      </div>
+      <div class="inline-flex justify-center md:justify-end md:w-1/4 gap-2">
+        <form>
+          <button class="btn btn-success">
+            <i class="fa-solid fa-thumbtack"></i>
+          </button>
+        </form>
+        <form>
+          <button class="btn btn-neutral">
+            <i class="fa-solid fa-lock"></i>
+          </button>
+        </form>
+        <form>
+          <button class="btn btn-info">
+            <i class="fa-solid fa-pen-to-square"></i>
+          </button>
+        </form>
+        <form>
+          <button class="btn btn-error">
+            <i class="fa-solid fa-trash-can"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 p-2 md:px-6">
+      <div class="flex w-full bg-base-300 indicator rounded-lg">
+        <span class="indicator-item indicator-bottom indicator-end btn btn-secondary">
+          <i class="fa-solid fa-thumbs-up"></i>
+        </span>
+        <div class="m-3 p-1">
+        <div class="flex">
+          <img src="/avatar.png" class="h-20 w-20 rounded-lg" alt="Shoes"/>
+          <div class="ml-2 flex flex-col">
+            <a class="text-lg font-bold">
+              Funasitien
+            </a>
+            <p class="badge badge-warning">
+              FONDATEUR
+            </p>
+          </div>
+        </div>
+        <div class="flex justify-center gap-x-6 mt-1">
+        <span><i class="fa-solid fa-comment"></i> 4</span>
+        <span><i class="fa-solid fa-pen-clip"></i> 2</span>
+        <span><i class="fa-solid fa-heart"></i> 0</span></div>
+        </div>
+      </div>
+    </div>  
+  </div>
 </Layout>

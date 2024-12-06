@@ -3,11 +3,10 @@ import Layout from "../../layouts/Layout.astro";
 ---
 
 <Layout title="DEMOSMP">
-  <div class="bg-base-100 p-2 pt-10">
+  <div class="bg-base-100 p-2 pt-10 md:px-4">
     <div class="flex max-sm:flex-col max-sm:justify-center min-w-fit">
       <div
-        class="breadcrumbs inline-flex justify-center md:justify-start md:w-3/4 md:pl-1"
-      >
+        class="breadcrumbs inline-flex justify-center md:justify-start md:w-3/4 md:pl-1">
         <ul>
           <li>
             <a href="/"><i class="fa-solid fa-house mr-2"></i> Acceuil</a>
@@ -44,33 +43,83 @@ import Layout from "../../layouts/Layout.astro";
 
     <div class="grid grid-cols-1 p-2 md:px-6">
       <div class="flex flex-col md:flex-row w-full bg-base-300 rounded-lg">
-        <div class="m-3 p-1 flex flex-col max-sm:justify-center w-full md:w-fit">
-        <div class="flex w-fit">
-          <img src="/avatar.png" class="h-20 w-20 rounded-lg" alt="Shoes"/>
-          <div class="ml-2 flex flex-col">
-            <a class="text-lg font-bold">
-              Funasitien
+        <div class="m-3 p-1 flex flex-col min-w-fit relative">
+          <div class="flex max-sm:justify-center w-full md:w-64">
+            <img src="/avatar.png" class="h-20 w-20 rounded-lg" alt="Shoes" />
+            <div class="ml-2 flex flex-col">
+              <a class="text-lg font-bold"> Funasitien</a>
+              <p class="badge badge-warning">FONDATEUR</p>
+            </div>
+          </div>
+          <div class="flex justify-center gap-x-6 mt-1">
+            <span><i class="fa-solid fa-comment"></i> 4</span>
+            <span><i class="fa-solid fa-pen-clip"></i> 2</span>
+            <span><i class="fa-solid fa-heart"></i> 0</span>
+          </div>
+
+          <div class="hidden md:absolute left-1 bottom-1">
+            <a class="btn btn-ghost">
+              <i class="fa-solid fa-calendar-days"></i> 6 décembre 2024 à 8:39
             </a>
-            <p class="badge badge-warning">
-              FONDATEUR
-            </p>
           </div>
         </div>
-        <div class="flex justify-center gap-x-6 mt-1">
-        <span><i class="fa-solid fa-comment"></i> 4</span>
-        <span><i class="fa-solid fa-pen-clip"></i> 2</span>
-        <span><i class="fa-solid fa-heart"></i> 0</span></div>
+        <div class="relative pb-16">
+          <article class="m-4 prose lg:prose-lg max-w-full">
+            <h2>🎁 Bienvenue sur la boutique de DEMOCRAFT !</h2>
+            <p>
+              Utilise le menu déroulant à ta gauche pour choisir une catégorie
+              et commencer tes emplettes.
+            </p>
+            <h4>✉️ Contact : contact@democraft.fr</h4>
+            <h3>🪙 Politique de remboursement</h3>
+            <p>
+              Tout paiements ou achat n'est pas remboursable. Comme l'indique
+              notre CGV, toute tenative de remboursement, par hasard avec un
+              litige PayPal, sera refusée, et un entraînera un bannissement
+              automatique immédiat sans retour possible. Ce qui est logique, car
+              sinon c'est du vol.
+            </p>
+            <h2>💢 Produit non reçu ?</h2>
+            Comme dit précédement, il est inutile de nous sauter sur paypal puisque
+            vous allez vous faire rattraper par notre CGV. Ouvrez plutot un ticket
+            sur le site ou sur notre discord avec votre ID de transaction (reçu sur
+            votre compte ici ou par mail) et nous essayerons de réparer cette injustice
+            dans les plus brefs delais, avec un petit dédomagement de 1000 rubys
+            💎 ;)
+          </article>
+          <div class="divider"></div>
+          <article class="m-4 prose lg:prose-lg max-w-full">
+            <div class="text-center w-full">
+              <h3>Funasitien DreamCloud</h3>
+              <p class="italic">
+                Duke of Lemanburg... King of the Dream SMP...
+              </p>
+            </div>
+          </article>
+          <div class="flex ms:hidden gap-2 absolute left-4">
+            <a class="btn btn-ghost">
+              <i class="fa-solid fa-calendar-days"></i> 6 décembre 2024 à 8:39
+            </a>
+          </div>
+          <div class="flex gap-2 absolute right-4">
+            <form>
+              <button class="btn btn-secondary">
+                <i class="fa-solid fa-heart"></i> 0
+              </button>
+            </form>
+            <form>
+              <button class="btn btn-info">
+                <i class="fa-solid fa-pen-to-square"></i>
+              </button>
+            </form>
+            <form>
+              <button class="btn btn-error">
+                <i class="fa-solid fa-trash-can"></i>
+              </button>
+            </form>
+          </div>
         </div>
-      
-        <article class="m-2 prose lg:prose-lg max-w-fit">
-          <h2>🎁 Bienvenue sur la boutique de DEMOCRAFT !</h2>
-          <p>Utilise le menu déroulant à ta gauche pour choisir une catégorie et commencer tes emplettes.</p>
-          <h4>✉️ Contact : contact@democraft.fr</h4>
-          <h3>🪙 Politique de remboursement</h3>
-          <p>Tout paiements ou achat n'est pas remboursable. Comme l'indique notre CGV, toute tenative de remboursement, par hasard avec un litige PayPal, sera refusée, et un entraînera un bannissement automatique immédiat sans retour possible. Ce qui est logique, car sinon c'est du vol.</p>
-          <h2>💢 Produit non reçu ?</h2>
-          Comme dit précédement, il est inutile de nous sauter sur paypal puisque vous allez vous faire rattraper par notre CGV. Ouvrez plutot un ticket sur le site ou sur notre discord avec votre ID de transaction (reçu sur votre compte ici ou par mail) et nous essayerons de réparer cette injustice dans les plus brefs delais, avec un petit dédomagement de 1000 rubys 💎 ;)</p>
-        </article></div>
-    </div>  
+      </div>
+    </div>
   </div>
 </Layout>

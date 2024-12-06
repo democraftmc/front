@@ -3,7 +3,7 @@ import Layout from "../../layouts/Layout.astro";
 ---
 
 <Layout title="DEMOSMP">
-  <div class="bg-base-100 p-4 pt-10 h-96">
+  <div class="bg-base-100 p-2 pt-10 h-96">
     <div class="flex flex-col md:flex-row">
       <div
         class="breadcrumbs inline-flex justify-center md:justify-start md:w-3/4 md:pl-1"
@@ -43,12 +43,9 @@ import Layout from "../../layouts/Layout.astro";
     </div>
 
     <div class="grid grid-cols-1 p-2 md:px-6">
-      <div class="flex w-full bg-base-300 indicator rounded-lg">
-        <span class="indicator-item indicator-bottom indicator-end btn btn-secondary">
-          <i class="fa-solid fa-thumbs-up"></i>
-        </span>
+      <div class="flex w-full bg-base-300 rounded-lg">
         <div class="m-3 p-1">
-        <div class="flex">
+        <div class="flex max-sm:justify-center">
           <img src="/avatar.png" class="h-20 w-20 rounded-lg" alt="Shoes"/>
           <div class="ml-2 flex flex-col">
             <a class="text-lg font-bold">

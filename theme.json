@@ -1,0 +1,12 @@
+{
+    "id": "front",
+    "name": "DEMOCRAFT FrontV2",
+    "description": "DEMOCRAFT customy hand crafted theme by a freacking nerd that have no life.",
+    "version": "1.0.0",
+    "url": "https://democraft.fr",
+    "authors": [
+        "Funasitien",
+        "DEMOCRAFT"
+    ],
+    "azuriom_api": "1.1.0"
+}

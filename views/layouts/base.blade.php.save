@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <title>@yield('title', setting('title', 'Funasitien'))</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="@yield('description', setting('description', ''))">
+    <meta name="theme-color" content="#ff5555">
+    <meta name="author" content="Funasitien">
+    <link rel="icon" type="image/png" href="{{ favicon() }}">
+    <link rel="shortcut icon" type="image/png" href="{{ favicon() }}">
+    <meta property="og:title" content="@yield('title')">
+    <meta property="og:type" content="@yield('type', 'website')">
+    <meta property="og:url" content="{{ url()->current() }}">
+    <meta property="og:image" content="{{ favicon() }}">
+    <meta property="og:description" content="@yield('description', setting('description', ''))">
+    <meta property="og:site_name" content="{{ site_name() }}">
+    @stack('meta')
+    <link rel="stylesheet" href="{{ theme_asset('style.css') }}" />
+    <link rel="stylesheet" href="/fonts/Satoshi.css" />
+    <link rel="stylesheet" href="https://atugatran.github.io/FontAwesome6Pro/css/all.min.css" >
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+        integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/theme-change@2.0.2/index.js"></script>
+    sizing:border-box;border-radius:calc(var(--radius-selector) + min(var(--range-p),calc(var(--radius-selector) + var(--radius-selector) + var(--radius-selector))));height:var(--range-thumb-size);width:var(--range-thumb-size);border:var(--range-p)solid;color:var(--range-progress);box-shadow:0 -1px oklch(0% 0 0/calc(var(--depth)*.1))inset,0 8px 0 -4px oklch(100% 0 0/calc(var(--depth)*.1))inset,0 1px color-mix(in oklab,currentColor calc(var(--depth)*10%),transparent),0 0 0 2rem var(--range-thumb)inset,calc((var(--range-dir,1)*-100rem) - (var(--range-dir,1)*var(--range-thumb-size)/2))0 0 calc(100rem*var(--range-fill));background-color:currentColor;position:relative;top:50%}&:disabled{cursor:not-allowed;opacity:.3}}.\32 xl\:range-primary{color:var(--color-primary);--range-thumb:var(--color-primary-content)}.\32 xl\:range-secondary{color:var(--color-secondary);--range-thumb:var(--color-secondary-content)}.\32 xl\:range-accent{color:var(--color-accent);--range-thumb:var(--color-accent-content)}.\32 xl\:range-neutral{color:var(--color-neutral);--range-thumb:var(--color-neutral-content)}.\32 xl\:range-success{color:var(--color-success);--range-thumb:var(--color-success-content)}.\32 xl\:range-warning{color:var(--color-warning);--range-thumb:var(--color-warning-content)}.\32 xl\:range-info{color:var(--color-info);--range-thumb:var(--color-info-content)}.\32 xl\:range-error{color:var(--color-error);--range-thumb:var(--color-error-content)}.\32 xl\:range-xs{--range-thumb-size:calc(var(--size-selector,.25rem)*4)}.\32 xl\:range-sm{--range-thumb-size:calc(var(--size-selector,.25rem)*5)}.\32 xl\:range-md{--range-thumb-size:calc(var(--size-selector,.25rem)*6)}.\32 xl\:range-lg{--range-thumb-size:calc(var(--size-selector,.25rem)*7)}.\32 xl\:range-xl{--range-thumb-size:calc(var(--size-selector,.25rem)*8)}}
+
+    @stack('styles')
+    @stack('scripts')
+    <script src="{{ asset('vendor/axios/axios.min.js') }}" defer></script>
+    <script src="{{ asset('js/script.js') }}" defer></script>
+</head>
+
+<body class="overflow-x-clip">
+            @include('elements.navbar')
+            @include('elements.menu')
+
+        @yield('app')
+
+            @include('elements.footer')
+            @include('elements.navigation')
+    
+</body>
+@stack('footer-scripts')
+</html>

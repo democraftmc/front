@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#background-video {
+   width: 100vw;
+   height: 100vh;
+   object-fit: cover;
+   position: fixed;
+   left: 0;
+   right: 0;
+   top: 0;
+   bottom: 0;
+   z-index: -1;
+}
+
+.home-hero {
+   min-height: 70vh;
+}
+
+.banner-hero {
+   min-height: 30vh;
+}
+
+@media (min-width: 768px) {
+   .home-hero {
+      min-height: 85vh;
+   }
+   .banner-hero {
+   min-height: 50vh;
+   }
+}
+
+@font-face {
+   font-family: 'Pixel Perfect';
+   src: url('PixelPerfect.woff2') format('woff2'),
+        url('PixelPerfect.woff') format('woff'),
+        url('PixelPerfect.ttf') format('truetype');
+   font-weight: normal;
+   font-style: normal;
+   font-display: swap;
+}
+
+.pixel {
+   font-family: 'Pixel Perfect', sans-serif;
+}
+
+.d-none {
+   display: none;
+}

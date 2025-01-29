@@ -1,19 +1,13 @@
 {
   "name": "democraft-front",
   "type": "module",
-  "version": "0.0.2",
+  "version": "3.0.2",
   "scripts": {
-    "dev": "astro dev",
-    "dev:expose": "astro dev --host",
-    "build": "astro build",
-    "build:css": "tailwindcss -i ./public/fixes.css -o ./public/output.css --minify",
-    "preview": "astro preview",
-    "astro": "astro"
+    "build": "tailwindcss -i ./assets/fixes.css -o ./assets/output.css",
+    "prod": "tailwindcss -i ./assets/fixes.css -o ./assets/output.css --minify"
   },
   "dependencies": {
-    "@astrojs/tailwind": "^5.1.2",
     "@tailwindcss/typography": "^0.5.15",
-    "astro": "^4.16.16",
     "tailwindcss": "^3.4.15"
   },
   "devDependencies": {
